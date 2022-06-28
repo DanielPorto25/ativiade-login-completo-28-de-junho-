@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Realize seu login! </title>
+<style>
+input[type=text] {
+    width: 15%;
+    padding: 2px 10px;
+    margin: 2px 1px;
+    border: 2px solid-red;
+    border-radius: 0px;
+}
+input[type=radio] {
+    width: 15%;
+    padding: 2px 10px;
+    margin: 2px 1px;
+    border: 2px solid-red;
+    border-radius: 0px;
+}
+
+input[type=email] {
+    width: 15%;
+    padding: 2px 10px;
+    margin: 2px 1px;
+    border: 2px solid-red;
+    border-radius: 0px;
+}
+input[type=password] {
+    width: 15%;
+    padding: 2px 10px;
+    margin: 2px 1px;
+    border: 2px solid-red;
+    border-radius: 0px;
+}
+
+input[type=number] {
+    width: 15%;
+    padding: 2px 10px;
+    margin: 2px 1px;
+    border: 2px solid-red;
+    border-radius: 0px;
+}
+
+body{
+background-image: url("background1.png");
+background-repeat: no-repeat;
+text-align: center;
+font-family: monospace;
+}
+
+img {
+width: 250px;
+margin-right: 900px;
+margin-top: 200px;
+}
+
+div {
+margin-top: -400px;
+}
+
+h1 {
+margin-top: 10px;  
+font-family: fantasy;
+color: rgb(51, 7, 51);
+}
+</style>
+</head>
+
+
+<body>
+    
+<img src="password1.png">
+
+<div>
+<h1>Faça seu login:</h1>
+<h2>Selecione seu Nome:</h2>
+
+    <form>
+        <label for=nome1 > Nome: </label> <br>
+         <input type="text" id=nome1 name="nome">
+    <br>
+    <label for=sobre> Sobrenome: </label> <br>
+         <input type="text" id=sobre name="sobrenome">
+    <br>
+    </form>
+
+<h2>Digite seu E-mail e Senha:</h2>
+
+    <form>
+        <label for=email> E-mail: </label> <br>
+        <input type="email" id="email" name="email" value="">
+    <br>
+        <label for=senha> Senha: </label> <br>
+        <input type="password" id=senha name="Senha" value="">
+    <br>
+    </form>
+
+ <h2>Selecione seu Estado Civil:</h2>
+
+    <form>
+        <label for=casado> Casado </label> <br>
+        <input type="radio" id="casado" name="est_civil" value="casado">
+    <br>
+        <label for=solteiro> Solteiro: </label> <br>
+        <input type="radio" id="solteiro" name="est_civil" value="solteiro">
+    <br>
+        <label for=divorciado> Divorciado </label> <br>
+        <input type="radio" id="divorciado" name="est_civil" value="divorciado">
+    <br>
+        <label for=viuvo> Viúvo </label> <br>
+        <input type="radio" id="viuvo" name="est_civil" value="viuvo">
+    <br>
+    </form>
+
+    <h2>Insira sua idade:</h2>
+    <form action="/action_page.php">
+
+        <label for=qtd> Idade </label>(Entre 18 anos acima):
+        <input type="number" id=qtd name="qtd" min="1" max="">
+        <input type="submit" value="Enviar">
+
+    </form> 
+    </div>
+</body>
+</html>
